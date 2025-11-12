@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #ffc2d1;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.top-bar {
+    background-color: #ff8fab;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NM img {
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    position: relative;
+    text-decoration: none;
+    color: black; 
+}
+
+.icon:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%; /* Muestra el tooltip arriba del icono */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8e1e1; /* Color de fondo del tooltip */
+    color: #333; /* Color del texto */
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    z-index: 10; /* Asegura que el tooltip esté por encima de otros elementos */
+    opacity: 0; /* Comienza oculto */
+    transition: opacity 0.3s; /* Transición suave */
+}
+
+.icon:hover::after {
+    opacity: 1; /* Muestra el tooltip al pasar el cursor */
+}
+
+.about-box {
+    background-color: #b388eb;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background-color: antiquewhite;
+    background-size: cover;
+    color: #3e75bc; 
+    font-family: 'Creepster', cursive;
+}
+
+/* Productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    background: #ffffff;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.ph2 {
+    color: #0D2C54;
+    text-align: center;
+}
+.cart {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ffffff;
+}
+button {
+    background-color: #49b6ff;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #72ddf7;
+}
+
+.footer p{
+    margin: 10px;
+    font-size: 18px;
+}
+
+.footer{
+    background: #06908f;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;   
+    margin-top: 40px;
+}
+
+.social-icons a{
+    margin: 0 15px;
+    color: black;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: #3f939e;
+}
+
+.rights {
+    background-color: #ffc2d1;
+    text-align: center;
+}
+
+.text-dark {
+    color: #333; /* Color del texto */
+}
+
+.text-dark:hover {
+    color: #555; /* Color del texto al pasar el mouse */
+}
+
